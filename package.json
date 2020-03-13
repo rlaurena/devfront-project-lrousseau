@@ -1,0 +1,25 @@
+{
+  "name": "devfront-project-lrousseau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel src/index.html",
+    "build": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlaurena/devfront-project-lrousseau.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlaurena/devfront-project-lrousseau/issues"
+  },
+  "homepage": "https://github.com/rlaurena/devfront-project-lrousseau#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.3"
+  }
+}
