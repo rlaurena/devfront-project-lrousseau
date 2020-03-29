@@ -1,7 +1,5 @@
-header {
-  background-color: red;
-}
+@import 'styles/vendors/reset.scss';
 
-h1 {
-  color: blue;
-}
+@import 'styles/blocs/header.scss';
+
+@import 'styles/global/layout.scss';

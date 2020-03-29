@@ -21,5 +21,10 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "assemble": "^0.3.83",
+    "grunt": "^0.4.5",
+    "styles": "^0.2.1"
   }
 }
