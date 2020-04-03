@@ -1,0 +1,14 @@
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.group__informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
