@@ -1,0 +1,23 @@
+/* scrollbar */
+
+/* SCROLL Chrome, Safari */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: black
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 20px;
+    -webkit-border-radius: 0px;
+    background: linear-gradient(to bottom, var(--co1), var(--co2));
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    height: 30px;
+    -webkit-border-radius: 0px;
+    background-color: var(--text);
+}
