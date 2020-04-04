@@ -3,8 +3,19 @@
     color: white;
 }
 
-h1 {
+p,
+h1,
+h2,
+a,
+li {
     font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+h1 {
     color: var(--textf);
     font-size: 4em;
     text-transform: uppercase;
@@ -16,4 +27,8 @@ h1 {
 
 bb1 {
     color: var(--co1);
+}
+
+a {
+    text-decoration: none;
 }
