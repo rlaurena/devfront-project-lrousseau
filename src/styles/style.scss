@@ -12,3 +12,7 @@
 @import 'blocs/tracklist.scss';
 @import 'blocs/album.scss';
 @import 'blocs/bottom.scss';
+
+html {
+    scroll-behavior: smooth;
+}
