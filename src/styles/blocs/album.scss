@@ -1,0 +1,133 @@
+.album {
+    min-height: 160vh;
+    height: auto;
+    background-image: url("/assets/pictures/bts2.png");
+    background-color: #2971b7;
+    background-size: 80%;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include medium {
+        min-height: 100vh;
+        background-size: 40%;
+    }
+
+}
+
+.album__sstitle {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.album__about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+    width: 90vw;
+    background-color: white;
+    z-index: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+    @include medium {
+        width: 40%;
+        padding: 10px 30px 20px 30px;
+    }
+
+    h2 {
+        color: black;
+        transition: all 0.6s;
+    }
+
+    h2:hover {
+        letter-spacing: 2px;
+        color: var(--co1);
+    }
+
+    h2:nth-of-type(2) {
+        align-self: flex-end;
+    }
+
+    p {
+        text-align: justify;
+        color: black;
+    }
+}
+
+.album__record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    opacity: 0.9;
+
+    @include medium {
+        width: 40%;
+    }
+}
+
+.record__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 5px;
+    transition: all 0.4s;
+    width: 100%;
+    margin-bottom: 5px;
+    min-height: 12vh;
+
+
+    p {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: var(--co4);
+        transition: all 0.4s;
+        text-align: center;
+        padding: 5px;
+        font-size: 1em;
+
+        @include medium {
+            font-size: 1.5em;
+        }
+    }
+
+    em {
+        color: var(--co4);
+        transition: all 0.4s;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        padding: 5px;
+        font-size: 0.9em;
+        letter-spacing: 0.4px;
+
+        @include medium {
+            font-size: 1.3em;
+            padding: 8px;
+            line-height: 1.4;
+        }
+    }
+
+}
+
+.record__description:hover {
+    background-color: white;
+
+    p {
+        color: black;
+    }
+
+    em {
+        color: black;
+    }
+}

@@ -25,6 +25,19 @@
     font-size: 1em;
     font-weight: 600;
     padding: 5px;
+
+    @include medium {
+        font-size: 1.3em;
+    }
+}
+
+.clip__informations--artist {
+    font-size: 0.8em;
+    padding: 5px 5px 10px 5px;
+    transition: all 1s;
+    color: var(--co4);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .clip__informations:after {
@@ -43,12 +56,6 @@
 .clip__informations:hover:after {
     width: 100%;
     left: 0;
-}
-
-.clip__informations--artist {
-    font-size: 0.7em;
-    font-style: italic;
-    padding: 5px 5px 10px 5px;
 }
 
 .clip__informations--redirection {

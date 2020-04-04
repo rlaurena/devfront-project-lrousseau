@@ -1,6 +1,7 @@
 @import 'vendors/reset.scss';
 
 @import 'config/variables.scss';
+@import 'config/mixins.scss';
 
 @import 'global/layout.scss';
 @import 'global/scrollbar.scss';
@@ -11,3 +12,5 @@
 @import 'blocs/tracklist.scss';
 @import 'blocs/album.scss';
 @import 'blocs/bottom.scss';
+
+@import 'javascript/scroll.js';

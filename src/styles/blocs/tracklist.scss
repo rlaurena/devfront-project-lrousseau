@@ -1,0 +1,148 @@
+.tracklist {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--black);
+    flex-direction: column;
+
+    @include medium {
+        min-height: 70vh;
+    }
+}
+
+.tracklist__description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+    @include medium {
+        width: 50%;
+        align-self: flex-start;
+    }
+}
+
+.tracklist__description--explications {
+    padding: 20px;
+
+    h2 {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0;
+
+        @include medium {
+            font-size: 2em;
+        }
+    }
+
+    p {
+        font-size: 0.8em;
+        padding-left: 10px;
+        border-left: 1px solid var(--co1);
+
+        @include medium {
+            font-size: 0.9em;
+        }
+    }
+}
+
+// liste titres + pochette album
+
+.tracklist__name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.tracklist__name--album {
+    width: 20vh;
+    height: 20vh;
+    position: relative;
+    transition: all 0.3s;
+
+    @include medium {
+        width: auto;
+        min-height: 220px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: auto;
+        height: 20vh;
+        object-fit: cover;
+        opacity: 1;
+        transition: all 0.4s;
+
+        @include medium {
+            min-height: 200px;
+        }
+    }
+
+    figcaption {
+        position: absolute;
+        top: 45%;
+        left: 16%;
+        opacity: 0;
+        color: white;
+        transition: all 0.4s;
+
+        @include medium {
+            font-size: 1.3em;
+            top: 42%;
+            left: 19%;
+        }
+    }
+}
+
+.tracklist__name--album:hover {
+
+    img {
+        opacity: 0.5;
+    }
+
+    figcaption {
+        opacity: 1;
+    }
+
+}
+
+.tracklist__name--singles {
+    margin-bottom: 25px;
+
+    @include medium {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 50vw;
+    }
+
+    ul {
+        margin: 0 10px;
+    }
+
+    li {
+        line-height: 1.2;
+        padding: 4px;
+        transition: all 0.3s;
+
+        @include medium {
+            font-size: 1.1em;
+        }
+    }
+
+    li:hover {
+        color: var(--co4);
+        background-color: white;
+    }
+
+    em {
+        color: var(--co1);
+        font-weight: 600;
+    }
+}
