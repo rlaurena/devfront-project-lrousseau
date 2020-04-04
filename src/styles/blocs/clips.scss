@@ -58,16 +58,17 @@
     left: 0;
 }
 
-.clip__informations--redirection {
+.clip__informations--redirection a {
     padding: 6px 10px;
     text-transform: uppercase;
     color: var(--co1);
     font-size: 0.7em;
     background-color: white;
     transition: all 0.4s;
+    letter-spacing: 1px;
 }
 
-.clip__informations--redirection:hover {
+.clip__informations--redirection a:hover {
     background-color: var(--co1);
     color: white;
 }
