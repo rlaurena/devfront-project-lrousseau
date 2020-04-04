@@ -61,6 +61,8 @@
 
 .index__title {
     min-height: 50vh;
+    display: flex;
+    align-items: center;
 }
 
 .index__versions {

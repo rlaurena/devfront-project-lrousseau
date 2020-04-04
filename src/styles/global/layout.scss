@@ -1,3 +1,19 @@
 * {
     box-sizing: border-box;
+    color: white;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--textf);
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-left: 10px;
+    width: 58vw;
+    font-weight: 700;
+    text-align: right;
+}
+
+bb1 {
+    color: var(--co1);
 }

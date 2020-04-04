@@ -1,8 +1,10 @@
 @import 'vendors/reset.scss';
 
-@import 'blocs/header.scss';
-@import 'blocs/clips.scss';
-
 @import 'config/variables.scss';
 
 @import 'global/layout.scss';
+@import 'global/scrollbar.scss';
+
+@import 'blocs/header.scss';
+@import 'blocs/clips.scss';
+@import 'blocs/group.scss';
